@@ -5,18 +5,19 @@ class ArregloRedimensionableDeRecordatorios {
     private Recordatorio[] lista;
 
     public ArregloRedimensionableDeRecordatorios() {
-        lista = new Recordatorio[0];
+        lista = new Recordatorio[0]; //esta ok 
     }
 
     public int longitud() {
-        return lista.length;
+        return lista.length; //esta ok
     }
 
     public void agregarAtras(Recordatorio i) {
-        Recordatorio[] lista_2 = new Recordatorio[lista.length + 1]; 
-        lista_2[0] = i;
-        for (int j = 1; j < lista.length; j++) {
+        Recordatorio[] lista_2 = new Recordatorio[lista.length + 1];
+        for (int j = 0; j < lista.length; j++) {
             lista_2[j] = lista[j];
+       // lista_2 [lista_2.length -1] = new Recordatorio(i.
+        
         }
     }
 
